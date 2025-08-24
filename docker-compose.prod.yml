@@ -37,8 +37,7 @@ services:
       - LOG_LEVEL=INFO
     volumes:
       - ./uploads:/app/uploads
-      - ./backend/app:/app/app
-      - ./backend/requirements.txt:/app/requirements.txt
+      - ./tricks.json:/app/tricks.json
       - ./logs:/app/logs
     restart: unless-stopped
     depends_on:
