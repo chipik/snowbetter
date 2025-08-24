@@ -90,7 +90,7 @@ docker-compose -f "$COMPOSE_FILE" up -d postgres backend frontend
 
 # Wait for services to be ready
 log "Waiting for services to be ready..."
-sleep 10
+sleep 20
 
 # Test if backend is responding
 log "Testing backend connectivity..."
