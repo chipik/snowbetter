@@ -24,15 +24,17 @@ COPY --from=build /app/build /usr/share/nginx/html
 # Copy custom nginx config for SPA
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Create nginx user
+# Create nginx user and directories
 RUN addgroup -g 1001 -S nodejs && \
-    adduser -S nextjs -u 1001
+    adduser -S nextjs -u 1001 && \
+    mkdir -p /var/cache/nginx /var/run /var/log/nginx
 
-# Change ownership of the app directory
+# Change ownership of the app directory and nginx directories
 RUN chown -R nextjs:nodejs /usr/share/nginx/html && \
     chown -R nextjs:nodejs /var/cache/nginx && \
     chown -R nextjs:nodejs /var/log/nginx && \
-    chown -R nextjs:nodejs /etc/nginx/conf.d
+    chown -R nextjs:nodejs /etc/nginx/conf.d && \
+    chown -R nextjs:nodejs /var/run
 
 # Switch to non-root user
 USER nextjs
