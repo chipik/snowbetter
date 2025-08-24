@@ -36,13 +36,15 @@ services:
       - ENVIRONMENT=production
       - LOG_LEVEL=INFO
     volumes:
-      - ./uploads:/app/uploads
+      - ./backend/app:/app/app
+      - ./backend/requirements.txt:/app/requirements.txt
       - ./tricks.json:/app/tricks.json
-      - ./logs:/app/logs
+      - ./uploads:/app/uploads
     restart: unless-stopped
     depends_on:
       postgres:
         condition: service_healthy
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
     networks:
       - app_network
     healthcheck:
