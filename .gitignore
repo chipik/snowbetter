@@ -320,6 +320,3 @@ site/
 .env.test
 .env.production
 
-# Production files
-docker-compose.override.yml
-docker-compose.prod.yml
