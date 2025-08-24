@@ -44,6 +44,7 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
     networks:
       - app_network
@@ -63,6 +64,10 @@ services:
       - REACT_APP_API_URL=${REACT_APP_API_URL:-https://snowbetter.ru}
       - REACT_APP_ENVIRONMENT=production
     restart: unless-stopped
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    command: npm start
     depends_on:
       - backend
     networks:
