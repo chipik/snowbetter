@@ -60,6 +60,14 @@ prod:
 	fi
 	./scripts/deploy.sh start
 
+prod-simple:
+	@echo "🚀 Starting simple production environment (HTTP only)..."
+	@if [ ! -f .env ]; then \
+		echo "❌ .env file not found. Please create it from env.production.example"; \
+		exit 1; \
+	fi
+	docker-compose -f docker-compose.prod.simple.yml up -d --build
+
 prod-stop:
 	@echo "🛑 Stopping production environment..."
 	./scripts/deploy.sh stop
