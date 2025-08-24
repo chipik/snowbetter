@@ -1,0 +1,270 @@
+{
+    "tricks": [
+      {
+        "id": 1,
+        "category": "spins",
+        "name": "Frontside 180",
+        "description": "Пол-оборота (180°), вращение лицом в сторону движения.",
+        "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop",
+        "technique": "1. Подъезжайте к трамплину с комфортной скоростью\n2. В момент отрыва начните вращение плечами в сторону пальцев ног\n3. Смотрите через переднее плечо в направлении вращения\n4. Держите колени слегка согнутыми\n5. Приземляйтесь в switch стойке (спиной вперед)\n6. Контролируйте скорость и направление после приземления",
+        "video_url": "https://www.youtube.com/watch?v=example1"
+      },
+      {
+        "id": 2,
+        "category": "spins",
+        "name": "Backside 180",
+        "description": "Пол-оборота (180°), вращение спиной в сторону движения.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "technique": "1. Подъезжайте к трамплину прямо\n2. В момент отрыва поворачивайте голову и плечи в сторону пяток\n3. Ведите вращение задним плечом\n4. Не торопитесь - пусть доска следует за телом\n5. Смотрите через заднее плечо на место приземления\n6. Приземляйтесь в switch, слегка согнув колени",
+        "video_url": "https://www.youtube.com/watch?v=example2"
+      },
+      {
+        "id": 3,
+        "category": "spins",
+        "name": "Frontside 360",
+        "description": "Оборот на 360° лицом в сторону вращения.",
+        "image": "https://images.unsplash.com/photo-1578662015751-4a8d3e3b8a8f?w=400&h=300&fit=crop",
+        "technique": "1. Освойте сначала frontside 180\n2. Набирайте больше скорости для полного оборота\n3. Сильнее закручивайте плечи в момент отрыва\n4. Подтягивайте колени к груди для ускорения вращения\n5. Смотрите через плечо, ищите место приземления\n6. Раскрывайтесь и выпрямляйте ноги перед приземлением\n7. Приземляйтесь в обычной стойке",
+        "video_url": "https://www.youtube.com/watch?v=example3"
+      },
+      {
+        "id": 4,
+        "category": "spins",
+        "name": "Backside 360",
+        "description": "Оборот на 360° спиной в сторону вращения.",
+        "image": "https://example.com/tricks/bs360.gif"
+      },
+      {
+        "id": 5,
+        "category": "spins",
+        "name": "Frontside 540",
+        "description": "Оборот на 540° лицом вперёд.",
+        "image": "https://example.com/tricks/fs540.gif"
+      },
+      {
+        "id": 6,
+        "category": "spins",
+        "name": "Backside 540",
+        "description": "Оборот на 540° спиной вперёд.",
+        "image": "https://example.com/tricks/bs540.gif"
+      },
+      {
+        "id": 7,
+        "category": "spins",
+        "name": "Frontside 720",
+        "description": "Оборот на 720° лицом вперёд (2 оборота).",
+        "image": "https://example.com/tricks/fs720.gif"
+      },
+      {
+        "id": 8,
+        "category": "spins",
+        "name": "Backside 720",
+        "description": "Оборот на 720° спиной вперёд (2 оборота).",
+        "image": "https://example.com/tricks/bs720.gif"
+      },
+      {
+        "id": 9,
+        "category": "spins",
+        "name": "Frontside 900",
+        "description": "Оборот на 900° (2.5 оборота) лицом вперёд.",
+        "image": "https://example.com/tricks/fs900.gif"
+      },
+      {
+        "id": 10,
+        "category": "spins",
+        "name": "Backside 900",
+        "description": "Оборот на 900° (2.5 оборота) спиной вперёд.",
+        "image": "https://example.com/tricks/bs900.gif"
+      },
+      {
+        "id": 11,
+        "category": "spins",
+        "name": "1080",
+        "description": "3 оборота (1080°). Возможен фронтсайд или бэксайд.",
+        "image": "https://example.com/tricks/1080.gif"
+      },
+      {
+        "id": 12,
+        "category": "spins",
+        "name": "1440",
+        "description": "4 оборота (1440°).",
+        "image": "https://example.com/tricks/1440.gif"
+      },
+      {
+        "id": 13,
+        "category": "flips",
+        "name": "Backflip",
+        "description": "Сальто назад в прыжке.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop"
+      },
+      {
+        "id": 14,
+        "category": "flips",
+        "name": "Frontflip",
+        "description": "Сальто вперёд в прыжке.",
+        "image": "https://example.com/tricks/frontflip.gif"
+      },
+      {
+        "id": 15,
+        "category": "flips",
+        "name": "Lincoln Loop",
+        "description": "Боковое сальто через плечо (фронтролл).",
+        "image": "https://example.com/tricks/lincoln.gif"
+      },
+      {
+        "id": 16,
+        "category": "flips",
+        "name": "Misty Flip",
+        "description": "Фронтфлип с вращением (off-axis).",
+        "image": "https://example.com/tricks/misty.gif"
+      },
+      {
+        "id": 17,
+        "category": "flips",
+        "name": "Rodeo Flip",
+        "description": "Бэкфлип с вращением (off-axis).",
+        "image": "https://example.com/tricks/rodeo.gif"
+      },
+      {
+        "id": 18,
+        "category": "off-axis",
+        "name": "Cork 720",
+        "description": "Off-axis вращение на 720°.",
+        "image": "https://example.com/tricks/cork720.gif"
+      },
+      {
+        "id": 19,
+        "category": "off-axis",
+        "name": "Double Cork 1080",
+        "description": "Двойное off-axis вращение с 3 оборотами (1080°).",
+        "image": "https://example.com/tricks/dc1080.gif"
+      },
+      {
+        "id": 20,
+        "category": "off-axis",
+        "name": "Triple Cork 1440",
+        "description": "Тройной cork с 4 оборотами (1440°).",
+        "image": "https://example.com/tricks/tc1440.gif"
+      },
+      {
+        "id": 21,
+        "category": "grabs",
+        "name": "Indy",
+        "description": "Задняя рука хватает кант между крепами с внутренней стороны.",
+        "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop"
+      },
+      {
+        "id": 22,
+        "category": "grabs",
+        "name": "Melon",
+        "description": "Ведущая рука хватает доску с внешней стороны между крепами.",
+        "image": "https://example.com/tricks/melon.gif"
+      },
+      {
+        "id": 23,
+        "category": "grabs",
+        "name": "Mute",
+        "description": "Передняя рука хватает кант с внутренней стороны между крепами.",
+        "image": "https://example.com/tricks/mute.gif"
+      },
+      {
+        "id": 24,
+        "category": "grabs",
+        "name": "Stalefish",
+        "description": "Задняя рука хватает кант снаружи за задним крепом.",
+        "image": "https://example.com/tricks/stalefish.gif"
+      },
+      {
+        "id": 25,
+        "category": "grabs",
+        "name": "Tail Grab",
+        "description": "Хват за хвост доски (tail).",
+        "image": "https://example.com/tricks/tailgrab.gif"
+      },
+      {
+        "id": 26,
+        "category": "grabs",
+        "name": "Nose Grab",
+        "description": "Хват за нос доски (nose).",
+        "image": "https://example.com/tricks/nosegrab.gif"
+      },
+      {
+        "id": 27,
+        "category": "grabs",
+        "name": "Japan Grab",
+        "description": "Передняя рука тянет доску к задней ноге через внутреннюю сторону.",
+        "image": "https://example.com/tricks/japan.gif"
+      },
+      {
+        "id": 28,
+        "category": "grabs",
+        "name": "Method",
+        "description": "Вариация Melon с выгибанием доски в сторону.",
+        "image": "https://example.com/tricks/method.gif"
+      },
+      {
+        "id": 29,
+        "category": "grabs",
+        "name": "Seatbelt",
+        "description": "Передняя рука тянется через корпус и хватает хвост доски.",
+        "image": "https://example.com/tricks/seatbelt.gif"
+      },
+      {
+        "id": 30,
+        "category": "grabs",
+        "name": "Truck Driver",
+        "description": "Обе руки хватают кант между крепами (как руль).",
+        "image": "https://example.com/tricks/truckdriver.gif"
+      },
+      {
+        "id": 31,
+        "category": "jibbing",
+        "name": "Boardslide",
+        "description": "Скольжение доской поперёк перилы или бокса.",
+        "image": "https://example.com/tricks/boardslide.gif"
+      },
+      {
+        "id": 32,
+        "category": "jibbing",
+        "name": "Lipslide",
+        "description": "Заезд на перилу с противоположной стороны доски.",
+        "image": "https://example.com/tricks/lipslide.gif"
+      },
+      {
+        "id": 33,
+        "category": "jibbing",
+        "name": "Nosepress",
+        "description": "Скольжение на периле/боксе, упор на переднюю часть доски.",
+        "image": "https://example.com/tricks/nosepress.gif"
+      },
+      {
+        "id": 34,
+        "category": "jibbing",
+        "name": "Tailpress",
+        "description": "Скольжение на периле/боксе, упор на хвост доски.",
+        "image": "https://example.com/tricks/tailpress.gif"
+      },
+      {
+        "id": 35,
+        "category": "combo",
+        "name": "Frontside 360 Melon",
+        "description": "Фронтсайд 360 с Melon grab.",
+        "image": "https://example.com/tricks/fs360melon.gif"
+      },
+      {
+        "id": 36,
+        "category": "combo",
+        "name": "Backside 540 Indy",
+        "description": "Бэксайд 540 с Indy grab.",
+        "image": "https://example.com/tricks/bs540indy.gif"
+      },
+      {
+        "id": 37,
+        "category": "combo",
+        "name": "Double Cork 1080 Mute",
+        "description": "Двойной cork 1080° с Mute grab.",
+        "image": "https://example.com/tricks/dc1080mute.gif"
+      }
+    ]
+  }
+  

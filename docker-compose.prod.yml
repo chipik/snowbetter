@@ -36,15 +36,13 @@ services:
     networks: [app]
 
   backend:
-    # предполагаю, что в репозитории есть ./backend/Dockerfile (как в dev)
     build:
       context: ./backend
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.prod
     container_name: ushe_luche_backend_prod
     env_file:
       - .env
     environment:
-      # Жёстко согласуем с postgres выше (user=postgres, db= snow…)
       DATABASE_URL: postgresql+psycopg2://postgres:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-snowboard_tricks}
       SECRET_KEY: ${SECRET_KEY}
       CORS_ORIGINS: ${CORS_ORIGINS}
@@ -58,7 +56,10 @@ services:
     expose:
       - "8000"
     restart: unless-stopped
+    volumes:
+      - ./uploads:/app/uploads   # <-- сохраняем только runtime-данные
     networks: [app]
+
 
   frontend:
     # ТОЛЬКО используем твой рабочий Dockerfile.prod для сборки статики + nginx
