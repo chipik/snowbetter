@@ -92,8 +92,8 @@ services:
       - ./nginx/conf.d/app.http.conf:/etc/nginx/conf.d/app.http.conf:ro
       # - ./nginx/conf.d/app.https.conf:/etc/nginx/conf.d/app.https.conf:ro  # Временно отключаем
       - ./uploads:/var/www/uploads:ro
-      - certbot-etc:/etc/letsencrypt
-      - certbot-var:/var/lib/letsencrypt
+      - certbot-www:/var/www/certbot  # Для ACME challenge
+      - letsencrypt:/etc/letsencrypt
     depends_on:
       - backend
       - frontend
@@ -115,8 +115,6 @@ volumes:
   redis_data:
   certbot-www:
   letsencrypt:
-  certbot-etc:
-  certbot-var:
 
 networks:
   app:
