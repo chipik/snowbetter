@@ -66,12 +66,14 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile.prod
+      args:
+        REACT_APP_API_URL: ${REACT_APP_API_URL:-http://snowbetter.ru}  # ✅ Передать при сборке
     container_name: ushe_luche_frontend_prod
     env_file:
       - .env
     # фронтенд служит статикой на 80 в своём контейнере
     environment:
-      - REACT_APP_API_URL=${REACT_APP_API_URL:-http://snowbetter.ru}
+      - REACT_APP_API_URL=${REACT_APP_API_URL:-http://snowbetter.ru}  # ✅ Добавить /api
     expose:
       - "80"
     restart: unless-stopped
