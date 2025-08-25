@@ -71,7 +71,7 @@ services:
       - .env
     # фронтенд служит статикой на 80 в своём контейнере
     environment:
-      - REACT_APP_API_URL=${REACT_APP_API_URL:-http://localhost/api} 
+      - REACT_APP_API_URL=${REACT_APP_API_URL:-http://snowbetter.ru}
     expose:
       - "80"
     restart: unless-stopped
