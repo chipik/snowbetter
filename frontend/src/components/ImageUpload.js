@@ -264,7 +264,11 @@ function ImageUpload({
       });
 
       if (response.data.success) {
-        const imageUrl = `http://localhost:8000${response.data.image_url}`;
+        // Используем переменную окружения для API URL
+        const apiBaseUrl = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+        // Убираем /api из базового URL для получения домена
+        const baseUrl = apiBaseUrl.replace('/api', '');
+        const imageUrl = `${baseUrl}${response.data.image_url}`;
         onChange(imageUrl);
         setSuccess('Изображение успешно загружено!');
       }
